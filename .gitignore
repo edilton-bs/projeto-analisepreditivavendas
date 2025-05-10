@@ -1,0 +1,43 @@
+# Ignore artefatos de modelagem e arquivos grandes
+models/
+*.pkl
+*.joblib
+*.sav
+*.h5
+*.pth
+*.pt
+*.onnx
+*.log
+*.tmp
+*.npy
+*.npz
+*.csv
+!data/olist_*.csv
+
+# Ignore arquivos temporários e de sistema
+.DS_Store
+Thumbs.db
+~$*
+*.swp
+*.swo
+.ipynb_checkpoints/
+__pycache__/
+.env
+.venv
+.envrc
+
+# Ignore arquivos de configuração de IDE
+.vscode/
+*.code-workspace
+
+# Ignore outputs de notebooks
+*.nbconvert.ipynb
+
+# Ignore arquivos de cache
+.cache/
+*.cache
+
+# Ignore arquivos de upload/download temporários
+*.part
+*.crdownload
+*.download
