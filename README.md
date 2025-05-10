@@ -1,6 +1,9 @@
 # projeto-analisepreditivavendas
 
-Este projeto visa criar um modelo preditivo para prever o tempo de entrega em um e-commerce brasileiro, utilizando o Olist Dataset. O pipeline inclui desde a preparação dos dados até a avaliação e visualização dos resultados.
+Este projeto visa criar um modelo preditivo para prever o tempo de entrega em um e-commerce brasileiro, utilizando o Olist Dataset. O pipeline inclui desde a preparação dos dados até a avaliação e visualização dos resultados. O modelo será avaliado com base em métricas como RMSE, MAE e R².
+
+Dados os dados foram extraídos do Kaggle e estão disponíveis em: [Olist Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
+
 
 ## Estrutura do Projeto
 - **data/**: arquivos de dados brutos e processados
