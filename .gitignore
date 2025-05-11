@@ -42,4 +42,5 @@ __pycache__/
 *.crdownload
 *.download
 
-# teste
+# Ignore arquivos de dados processados
+/data/olist_final_dataset.csv
