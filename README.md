@@ -4,7 +4,6 @@ Este projeto visa criar um modelo preditivo para prever o tempo de entrega em um
 
 Os dados foram extraídos do Kaggle e estão disponíveis em: [Olist Dataset](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce).
 
-
 ## Estrutura do Projeto
 - **data/**: arquivos de dados brutos e processados
 - **models/**: modelos treinados (não versionados no GitHub)
@@ -33,6 +32,21 @@ Os dados foram extraídos do Kaggle e estão disponíveis em: [Olist Dataset](ht
 - **Modelos salvos**: arquivos em `models/` não são versionados no GitHub devido ao tamanho.
 - **Dados**: utilize os arquivos da pasta `data/` (Olist Dataset).
 - **Reprodutibilidade**: utilize o mesmo random_state para splits e modelagem.
+
+## Sobre os Dados
+
+O projeto utiliza o Olist Dataset, um conjunto de dados público sobre e-commerce brasileiro. Os principais arquivos CSV utilizados são:
+
+- **olist_orders_dataset.csv**: informações sobre os pedidos (ID, status, datas de compra, entrega, etc).
+- **olist_order_items_dataset.csv**: detalhes dos itens de cada pedido (produto, vendedor, preço, valor do frete, etc).
+- **olist_customers_dataset.csv**: dados dos clientes (ID, localização, cidade, estado, etc).
+- **olist_sellers_dataset.csv**: dados dos vendedores (ID, localização, cidade, estado, etc).
+- **olist_products_dataset.csv**: características dos produtos (ID, categoria, dimensões, peso, etc).
+- **olist_order_payments_dataset.csv**: informações sobre pagamentos (tipo, parcelas, valor, etc).
+- **olist_order_reviews_dataset.csv**: avaliações dos pedidos (nota, comentário, data da avaliação, etc).
+- **olist_geolocation_dataset.csv**: latitude e longitude de CEPs para cálculo de distância.
+
+Durante o pipeline, esses arquivos são integrados e processados para gerar o dataset final (`olist_final_dataset.csv`), que reúne todas as features relevantes para a modelagem preditiva.
 
 ## Principais Bibliotecas Utilizadas
 - pandas
